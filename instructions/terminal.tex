@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{listings}
+
+\begin{document}
+\title{How to open and navigate in a terminal}
+
+\maketitle
+
+\section{Windows}
+In Windows use the Windows Explorer to find the folder where you downloaded the Python files. Once you are in that folder hold shift and click the right mouse button and select ``open command window here". 
+
+\section{Mac}
+Open your Applications then open the Utilities folder. Inside of there open the terminal.
+
+
+\section{Linux}
+In some Linux environments you can navigate in the File Manager to where you downloaded the Python files, right click the mouse, and select ``Open terminal here".
+
+If that doesn't work you can open a terminal by pressing the ctrl, alt, and t buttons at the same time. 
+
+
+\section{Navigating the terminal}
+Once you are in the terminal you can use the following commands to navigate. Use them to find the directory where your Python files are. 
+
+To go up a directory type:
+\begin{center}
+\begin{lstlisting}[language=bash]
+cd ..
+\end{lstlisting}
+\end{center}
+
+To go down a directory replace `..' with the name of the directory like this:
+\begin{center}
+\begin{lstlisting}[language=bash]
+cd Downloads
+\end{lstlisting}
+\end{center}
+
+To see a list of everything in the directory that you are in use this command on Mac or Linux:
+\begin{center}
+\begin{lstlisting}[language=bash]
+ls
+\end{lstlisting}
+\end{center}
+
+Or this one on Windows:
+\begin{center}
+\begin{lstlisting}[language=bash]
+dir
+\end{lstlisting}
+\end{center}
+
+
+\section{Running the code}
+Once you are in the correct directory we should be able to simply type:
+\begin{lstlisting}[language=bash]
+python sneak.py
+\end{lstlisting}
+
+\end{document}
